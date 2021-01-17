@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dashboard</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.css">
+    <link rel='stylesheet' type='text/css' media='screen' href='fontawesome-free/css/all.min.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    
+</head>
+<body class="overlay-scrollbar">
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link">                    
+                    <i class="fas fa-bars" onclick="collapseSidebar()"></i>
+                </a>    
+            </li>
+            <li class="nav-item">
+                <img class="logo" src="assets/logo_stm.png">
+            </li>
+        </ul>
+        <form class="navbar-search">
+            <input type="text" name="search" class="navbar-seacrh-input" placeholder="Search">
+            <i class="fas fa-search"></i>
+        </form>
+        <ul class="navbar-nav nav-right">
+            <li class="nav-item">
+                <a class="nav-link">
+                    <label>Username</label>
+                </a>    
+            </li>
+            <li class="nav-item avt-wrapper">
+				<div class="avt dropdown">
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="fas fa-cog" class="dropdown-toggle" data-toggle="user-menu"></i>
+                        </a>    
+                    </li>					
+					
+				</div>
+			</li>
+        </ul>
+    </div>
+
+    <!-- End Navbar -->
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <ul class="sidebar-nav">
+            <li class="sidebar-nav-item">
+                <a href="data/dashboard.html" target="konten" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <span>
+                        Dashboard
+                    </span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="data/siswa.html" target="konten" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <span>
+                        Siswa
+                    </span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="data/kelas.html" target="konten" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-house-user"></i>
+                    </div>
+                    <span>
+                        Kelas
+                    </span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="data/guru.html" target="konten" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <span>
+                        Guru
+                    </span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="data/pelanggaran.html" target="konten" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <span>
+                        Pelanggaran
+                    </span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="data/reward.html" target="konten" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-medal"></i>
+                    </div>
+                    <span>
+                        Reward
+                    </span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="#" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <span>
+                        Orang Tua
+                    </span>
+                </a>
+            </li>
+            <li class="sidebar-nav-item">
+                <a href="data/admin.html" target="konten" class="sidebar-nav-link">
+                    <div>
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <span>
+                        Admin
+                    </span>
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+    <!-- End Sidebar -->
+
+    <!-- Main Content -->
+    <div class="wrapper">
+        <iframe src="data/dashboard.html" name="konten" frameborder="0" width="100%" height="588px"></iframe>              
+        
+    </div>
+    <!-- End Main Content -->
+    
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
